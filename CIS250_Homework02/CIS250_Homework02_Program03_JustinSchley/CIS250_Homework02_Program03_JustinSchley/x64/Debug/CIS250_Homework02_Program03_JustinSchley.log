@@ -1,0 +1,8 @@
+﻿  Question.cpp
+C:\Users\Justin\Documents\Downloads\CIS250_Homework02_Program03_JustinSchley\CIS250_Homework02_Program03_JustinSchley\Question.cpp(65,37): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Justin\Documents\Downloads\CIS250_Homework02_Program03_JustinSchley\CIS250_Homework02_Program03_JustinSchley\Question.cpp(69,37): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Justin\Documents\Downloads\CIS250_Homework02_Program03_JustinSchley\CIS250_Homework02_Program03_JustinSchley\Question.cpp(73,37): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Justin\Documents\Downloads\CIS250_Homework02_Program03_JustinSchley\CIS250_Homework02_Program03_JustinSchley\Question.cpp(77,37): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Justin\Documents\Downloads\CIS250_Homework02_Program03_JustinSchley\CIS250_Homework02_Program03_JustinSchley\Question.cpp(81,37): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Justin\Documents\Downloads\CIS250_Homework02_Program03_JustinSchley\CIS250_Homework02_Program03_JustinSchley\Question.cpp(85,37): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  CIS250_Homework02_Program03_JustinSchley.vcxproj -> C:\Users\Justin\Documents\Downloads\CIS250_Homework02_Program03_JustinSchley\x64\Debug\CIS250_Homework02_Program03_JustinSchley.exe
