@@ -1,0 +1,21 @@
+﻿  CIS250_Homework01_JustinSchley.cpp
+C:\Users\Justin\Documents\GitHub\CIS250_Homework01_JustinSchley\CIS250_Homework01_JustinSchley\CIS250_Homework01_JustinSchley.cpp(79,46): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Justin\Documents\GitHub\CIS250_Homework01_JustinSchley\CIS250_Homework01_JustinSchley\CIS250_Homework01_JustinSchley.cpp(83,46): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Justin\Documents\GitHub\CIS250_Homework01_JustinSchley\CIS250_Homework01_JustinSchley\CIS250_Homework01_JustinSchley.cpp(87,46): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Justin\Documents\GitHub\CIS250_Homework01_JustinSchley\CIS250_Homework01_JustinSchley\CIS250_Homework01_JustinSchley.cpp(91,46): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Justin\Documents\GitHub\CIS250_Homework01_JustinSchley\CIS250_Homework01_JustinSchley\CIS250_Homework01_JustinSchley.cpp(95,46): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Justin\Documents\GitHub\CIS250_Homework01_JustinSchley\CIS250_Homework01_JustinSchley\CIS250_Homework01_JustinSchley.cpp(99,46): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Justin\Documents\GitHub\CIS250_Homework01_JustinSchley\CIS250_Homework01_JustinSchley\CIS250_Homework01_JustinSchley.cpp(103,46): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Justin\Documents\GitHub\CIS250_Homework01_JustinSchley\CIS250_Homework01_JustinSchley\CIS250_Homework01_JustinSchley.cpp(107,46): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Justin\Documents\GitHub\CIS250_Homework01_JustinSchley\CIS250_Homework01_JustinSchley\CIS250_Homework01_JustinSchley.cpp(111,46): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Justin\Documents\GitHub\CIS250_Homework01_JustinSchley\CIS250_Homework01_JustinSchley\CIS250_Homework01_JustinSchley.cpp(115,46): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Justin\Documents\GitHub\CIS250_Homework01_JustinSchley\CIS250_Homework01_JustinSchley\CIS250_Homework01_JustinSchley.cpp(119,46): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Justin\Documents\GitHub\CIS250_Homework01_JustinSchley\CIS250_Homework01_JustinSchley\CIS250_Homework01_JustinSchley.cpp(123,46): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Justin\Documents\GitHub\CIS250_Homework01_JustinSchley\CIS250_Homework01_JustinSchley\CIS250_Homework01_JustinSchley.cpp(127,46): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Justin\Documents\GitHub\CIS250_Homework01_JustinSchley\CIS250_Homework01_JustinSchley\CIS250_Homework01_JustinSchley.cpp(273,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Justin\Documents\GitHub\CIS250_Homework01_JustinSchley\CIS250_Homework01_JustinSchley\CIS250_Homework01_JustinSchley.cpp(276,38): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Justin\Documents\GitHub\CIS250_Homework01_JustinSchley\CIS250_Homework01_JustinSchley\CIS250_Homework01_JustinSchley.cpp(294,38): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Justin\Documents\GitHub\CIS250_Homework01_JustinSchley\CIS250_Homework01_JustinSchley\CIS250_Homework01_JustinSchley.cpp(327,57): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Justin\Documents\GitHub\CIS250_Homework01_JustinSchley\CIS250_Homework01_JustinSchley\CIS250_Homework01_JustinSchley.cpp(407,33): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Justin\Documents\GitHub\CIS250_Homework01_JustinSchley\CIS250_Homework01_JustinSchley\CIS250_Homework01_JustinSchley.cpp(467): warning C4715: 'choice': not all control paths return a value
+  CIS250_Homework01_JustinSchley.vcxproj -> C:\Users\Justin\Documents\GitHub\CIS250_Homework01_JustinSchley\x64\Debug\CIS250_Homework01_JustinSchley.exe
