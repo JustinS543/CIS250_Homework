@@ -27,8 +27,8 @@ void DoublyList::insertNode(Pet* pet)
 {
 	Node* node = new Node;
 	node->setPet(pet);
-	Node* tmpPtr = head; //tmpPtr is the temporary pointer to cycle through the list and find a matching ID, starts at head
-	Node* takeItBackNowYall = tmpPtr; //Using previous node to insert if the matching node is the tail or in the middle
+	Node* tmpPtr = head; //temporary pointer to cycle through the list and find a matching ID, starts at head
+	Node* prevNode = tmpPtr; //Using previous node to insert if the matching node is the tail or in the middle
 	bool found = false; //Flips if node is found, then ends while loop
 
 	while (tmpPtr != nullptr && found == false)
@@ -46,17 +46,17 @@ void DoublyList::insertNode(Pet* pet)
 			found = true;
 			if (tmpPtr == tail) 
 			{
-				takeItBackNowYall = tail->getPrevious();
-				node->setPrevious(takeItBackNowYall);
-				takeItBackNowYall->setNext(node);
+				prevNode = tail->getPrevious();
+				node->setPrevious(prevNode);
+				prevNode->setNext(node);
 				node->setNext(tail);
 				tail->setPrevious(node);
 			}
 			else
 			{
-				takeItBackNowYall = tmpPtr->getPrevious(); //This hurt the most to get right
-				takeItBackNowYall->setNext(node);
-				node->setPrevious(takeItBackNowYall);
+				prevNode = tmpPtr->getPrevious(); //This hurt the most to get right
+				prevNode->setNext(node);
+				node->setPrevious(prevNode);
 				node->setNext(tmpPtr);
 				tmpPtr->setPrevious(node);
 			}
@@ -74,7 +74,7 @@ void DoublyList::insertNode(Pet* pet)
 void DoublyList::deleteNode(int id)
 {
 	Node* tmpPtr = head; //tmpPtr is the temporary pointer to cycle through the list and find a matching ID
-	Node* takeItBackNowYall; //using previous node to insert if the matching node is the tail
+	Node* prevNode; //using previous node to insert if the matching node is the tail
 	bool found = false; //Flips if node is found, then ends while loop
 
 	while (tmpPtr != nullptr && found == false)
@@ -88,10 +88,10 @@ void DoublyList::deleteNode(int id)
 			}
 			else if (tmpPtr->getPet()->getID() > head->getPet()->getID() && tmpPtr->getPet()->getID() < tail->getPet()->getID()) //If the node is in the middle of the list
 			{
-				takeItBackNowYall = tmpPtr->getPrevious();
+				prevNode = tmpPtr->getPrevious();
 				tmpPtr = tmpPtr->getNext();
-				takeItBackNowYall->setNext(tmpPtr);
-				tmpPtr->setPrevious(takeItBackNowYall);
+				prevNode->setNext(tmpPtr);
+				tmpPtr->setPrevious(prevNode);
 			}
 			else if (tmpPtr == tail) //If node is found at tail
 			{

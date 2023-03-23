@@ -10,8 +10,7 @@ using namespace std;
 
 int main()
 {
-    DoublyList* d;
-    d = new DoublyList;
+    DoublyList* d = new DoublyList;
 
     //Appending
     Pet* pet = new Pet(10, "Labrador Retriever", "McPlaceholder", 20);
