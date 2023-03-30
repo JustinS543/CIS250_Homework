@@ -1,21 +1,20 @@
 #include "Pet.h"
 #include <iostream>
-#include <string>
 
 using namespace std;
 
 Pet::Pet()
 {
 	ID = 0;
-	type = "";
 	name = "";
+	type = "";
 	age = 0;
 }
 Pet::Pet(int id, string t, string n, int a)
 {
 	ID = id;
-	type = t;
 	name = n;
+	type = t;
 	age = a;
 }
 void Pet::setID(int newID)
