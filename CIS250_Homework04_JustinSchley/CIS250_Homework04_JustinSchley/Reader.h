@@ -11,12 +11,12 @@ private:
 	double timeSecond;
 	double timeMinute;
 	int size;
-	string nameTemp;
+	string nameTemp; //Temporary storage for data from the file
 	double wageTemp;
 	int IDTemp;
 	int deptIDTemp;
-	Person* array; //temporary size assignment
-	int namePos = 0;
+	Person* array;
+	int namePos = 0; //The following can be changed to adjust for different files
 	int nameLen = 15;
 	int wagePos = 21;
 	int wageLen = 6;
@@ -30,7 +30,5 @@ public:
 	void display();
 	void bubbleSort();
 	void insertionSort();
-	void firstTen();
-	void lastTen();
 };
 

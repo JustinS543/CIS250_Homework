@@ -14,11 +14,10 @@ public:
 	Person();
 	Person(string, double, int, int);
 	void setAll(string, double, int, int);
-
+	//Getters
 	string getName();
 	double getWage();
 	int getID();
 	int getDeptID();
-
 };
 

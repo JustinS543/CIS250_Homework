@@ -12,7 +12,6 @@ void Reader::writeArray(int s)
 	ifstream inputFile;
 	string fileName = "CensusSmall.txt";
 	string lineOfText;
-
 	inputFile.open(fileName);
 
 	if (inputFile)
@@ -28,7 +27,7 @@ void Reader::writeArray(int s)
 		}
 		inputFile.close();
 	}
-	array = arrayNew; //no clue why I need to do this, figure out later
+	array = arrayNew; 
 }
 void Reader::display()
 {
@@ -59,7 +58,7 @@ void Reader::display()
 			cout << "LAST 10" << endl;
 			cout << "ID" << setw(18) << "Name" << setw(21) << "Hourly" << endl;
 			cout << "=========================================" << endl;
-			for (int i = size - 1; i > size - 10; i--)
+			for (int i = size - 1; i > size - 11; i--)
 			{
 				cout << setw(16) << left << array[i].getID() << setw(19) << array[i].getName() << setw(21) << array[i].getWage() << endl;
 			}
@@ -83,7 +82,7 @@ void Reader::display()
 			cout << "LAST 10" << endl;
 			cout << "ID" << setw(18) << "Name" << setw(21) << "Hourly" << endl;
 			cout << "=========================================" << endl;
-			for (int i = size - 1; i > size - 10; i--)
+			for (int i = size - 1; i > size - 11; i--)
 			{
 				cout << setw(16) << left << array[i].getID() << setw(19) << array[i].getName() << setw(21) << array[i].getWage() << endl;
 			}
@@ -100,23 +99,33 @@ void Reader::display()
 }
 void Reader::bubbleSort()
 {
+	bool swapped = false;
+	int iterations = 1;
 	Person lower;
 	Person higher;
 	chrono::high_resolution_clock::time_point start = chrono::high_resolution_clock::now();
 
 	for (int i = 0; i < size; i++)
 	{
+		swapped = false;
 		for (int j = 0; j < size - 1; j++)
 		{
 			if (array[j].getID() > array[j + 1].getID())
 			{
+				swapped = true;
 				higher = array[j];
 				lower = array[j + 1];
 				array[j] = lower;
 				array[j + 1] = higher;
 			}
 		}
+		if (swapped == false)
+		{
+			break;
+		}
 	}
+	cout << iterations << endl;
+
 	chrono::high_resolution_clock::time_point end = chrono::high_resolution_clock::now();
 	chrono::duration<double, milli> time = end - start;
 	timeSecond = time.count() / 1000;
@@ -127,7 +136,6 @@ void Reader::insertionSort()
 	Person lower;
 	Person higher;
 	chrono::high_resolution_clock::time_point start = chrono::high_resolution_clock::now();
-
 
 	for (int i = 0; i < size; i++)
 	{
@@ -142,6 +150,7 @@ void Reader::insertionSort()
 			}
 		}
 	}
+
 	chrono::high_resolution_clock::time_point end = chrono::high_resolution_clock::now();
 	chrono::duration<double, milli> time = end - start;
 	timeSecond = time.count() / 1000;
