@@ -8,15 +8,18 @@
 class Reader
 {
 private:
+	Person* array;
+	//Chrono time storage
 	double timeSecond;
 	double timeMinute;
 	int size;
-	string nameTemp; //Temporary storage for data from the file
+	//Temporary storage for data from the file
+	string nameTemp;
 	double wageTemp;
 	int IDTemp;
 	int deptIDTemp;
-	Person* array;
-	int namePos = 0; //The following can be changed to adjust for different files
+	//The following values can be changed to adjust for different files
+	int namePos = 0;
 	int nameLen = 15;
 	int wagePos = 21;
 	int wageLen = 6;

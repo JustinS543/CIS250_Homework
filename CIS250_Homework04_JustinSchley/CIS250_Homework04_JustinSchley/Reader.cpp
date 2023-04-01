@@ -2,7 +2,7 @@
 
 Reader::Reader()
 {
-	
+
 }
 void Reader::writeArray(int s)
 {
@@ -22,7 +22,7 @@ void Reader::writeArray(int s)
 			wageTemp = stod(lineOfText.substr(wagePos, wageLen));
 			IDTemp = stoi(lineOfText.substr(IDPos, IDLen));
 			deptIDTemp = stoi(lineOfText.substr(deptIDPos, deptIDLen));
-			arrayNew[i].setAll(nameTemp, wageTemp, IDTemp, deptIDTemp);
+			arrayNew[i] = Person(nameTemp, wageTemp, IDTemp, deptIDTemp);
 			i++;
 		}
 		inputFile.close();
@@ -46,7 +46,20 @@ void Reader::display()
 		{
 			valid = true;
 			bubbleSort();
+		}
+		else if (select == "2")
+		{
+			valid = true;
+			insertionSort();
+		}
+		else
+		{
+			cout << "Invalid option. Please try again." << endl;
+			cout << "Make your selection: ";
+		}
 
+		if (valid == true)
+		{
 			cout << "FIRST 10" << endl;
 			cout << "ID" << setw(18) << "Name" << setw(21) << "Hourly" << endl;
 			cout << "=========================================" << endl;
@@ -58,42 +71,13 @@ void Reader::display()
 			cout << "LAST 10" << endl;
 			cout << "ID" << setw(18) << "Name" << setw(21) << "Hourly" << endl;
 			cout << "=========================================" << endl;
-			for (int i = size - 1; i > size - 11; i--)
+			for (int i = size - 10; i < size; i++)
 			{
 				cout << setw(16) << left << array[i].getID() << setw(19) << array[i].getName() << setw(21) << array[i].getWage() << endl;
 			}
 
 			cout << "It took: " << timeSecond << " second to complete." << endl;
 			cout << "It took: " << timeMinute << " minutes to complete." << endl;
-		}
-		else if (select == "2")
-		{
-			valid = true;
-			insertionSort();
-
-			cout << "FIRST 10" << endl;
-			cout << "ID" << setw(18) << "Name" << setw(21) << "Hourly" << endl;
-			cout << "=========================================" << endl;
-			for (int i = 0; i < 10; i++)
-			{
-				cout << setw(16) << left << array[i].getID() << setw(19) << array[i].getName() << setw(21) << array[i].getWage() << endl;
-			}
-
-			cout << "LAST 10" << endl;
-			cout << "ID" << setw(18) << "Name" << setw(21) << "Hourly" << endl;
-			cout << "=========================================" << endl;
-			for (int i = size - 1; i > size - 11; i--)
-			{
-				cout << setw(16) << left << array[i].getID() << setw(19) << array[i].getName() << setw(21) << array[i].getWage() << endl;
-			}
-
-			cout << "It took: " << timeSecond << " seconds to complete." << endl;
-			cout << "It took: " << timeMinute << " minutes to complete." << endl;
-		}
-		else
-		{
-			cout << "Invalid option. Please try again." << endl;
-			cout << "Make your selection: ";
 		}
 	}
 }
