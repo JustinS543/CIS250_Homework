@@ -1,3 +1,10 @@
+//====================
+// Name: Justin Schley
+// Date:    04-04-2023
+// Desc:   CIS250 HW04
+//====================
+
+
 #include <iostream>
 #include <string>
 #include "Reader.h"
