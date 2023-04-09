@@ -14,14 +14,8 @@ bubble or insertion sort to sort the data by the ID variable.
 
 **Reader
 
-The Reader class contains variables and functions to read, write, and sort data.
-The variables which contain Pos or Len change the position and length of the data to
-accomodate differently parsed files. Variables ending in Temp are used to temporarily hold data
-to pass to a Person object. The array is created using the Person class to create Person objects
-for each position in the array.
+The Reader class contains variables and functions to read, write, and sort data.Variables ending in Temp are used to temporarily hold data to pass to a Person object. The array is created using the Person class to create Person objects for each position in the array.
 
 **Person
 
-The Person class contains variables for name, wage, ID, and deptID. The class uses an overloaded
-constructor to accept data and create a Person object. There are also getters for each variable
-to get the information from each object.
+The Person class contains variables for name, wage, ID, and deptID. The class uses an overloaded constructor to accept data and create a Person object. There are also getters for each variable to get the information from each object.

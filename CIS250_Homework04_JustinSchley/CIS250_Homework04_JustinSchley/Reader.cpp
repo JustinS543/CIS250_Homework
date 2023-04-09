@@ -7,27 +7,63 @@ Reader::Reader()
 void Reader::writeArray(int s)
 {
 	size = s;
-	int i = 0;
-	Person* arrayNew = new Person[size];
+	Person* arrayNew = new Person[s];
 	ifstream inputFile;
 	string fileName = "CensusSmall.txt";
 	string lineOfText;
+	char delim = ' ';
+	int spacePos;
+	int i = 0;
+	int nextPos;
+
 	inputFile.open(fileName);
 
 	if (inputFile)
 	{
 		while (getline(inputFile, lineOfText))
 		{
-			nameTemp = lineOfText.substr(namePos, nameLen);
-			wageTemp = stod(lineOfText.substr(wagePos, wageLen));
-			IDTemp = stoi(lineOfText.substr(IDPos, IDLen));
-			deptIDTemp = stoi(lineOfText.substr(deptIDPos, deptIDLen));
+			spacePos = lineOfText.find(delim);
+			nameTemp = lineOfText.substr(0, spacePos);
+			lineOfText = lineOfText.substr(spacePos + 1);
+			while (lineOfText.at(0) == ' ')
+			{
+				lineOfText = lineOfText.substr(1);
+			}
+
+			spacePos = lineOfText.find(delim);
+			dumpTemp = lineOfText.substr(0, spacePos);
+			lineOfText = lineOfText.substr(spacePos + 1);
+			while (lineOfText.at(0) == ' ')
+			{
+				lineOfText = lineOfText.substr(1);
+			}
+
+			spacePos = lineOfText.find(delim);
+			wageTemp = stod(lineOfText.substr(0, spacePos));
+			lineOfText = lineOfText.substr(spacePos + 1);
+			while (lineOfText.at(0) == ' ')
+			{
+				lineOfText = lineOfText.substr(1);
+			}
+
+			spacePos = lineOfText.find(delim);
+			IDTemp = stoi(lineOfText.substr(0, spacePos));
+			lineOfText = lineOfText.substr(spacePos + 1);
+			while (lineOfText.at(0) == ' ')
+			{
+				lineOfText = lineOfText.substr(1);
+			}
+
+			spacePos = lineOfText.find(delim);
+			deptIDTemp = stoi(lineOfText);
+
 			arrayNew[i] = Person(nameTemp, wageTemp, IDTemp, deptIDTemp);
+
 			i++;
 		}
 		inputFile.close();
 	}
-	array = arrayNew; 
+	array = arrayNew;
 }
 void Reader::display()
 {
@@ -65,18 +101,18 @@ void Reader::display()
 			cout << "=========================================" << endl;
 			for (int i = 0; i < 10; i++)
 			{
-				cout << setw(16) << left << array[i].getID() << setw(19) << array[i].getName() << setw(21) << array[i].getWage() << endl;
+				cout << setw(16) << left << array[i].getID() << setw(19) << array[i].getName() << array[i].getWage() << endl;
 			}
 
 			cout << "LAST 10" << endl;
-			cout << "ID" << setw(18) << "Name" << setw(21) << "Hourly" << endl;
+			cout << setw(16) << "ID" << setw(19) << "Name" << setw(22) << "Hourly" << endl;
 			cout << "=========================================" << endl;
 			for (int i = size - 10; i < size; i++)
 			{
-				cout << setw(16) << left << array[i].getID() << setw(19) << array[i].getName() << setw(21) << array[i].getWage() << endl;
+				cout << setw(16) << left << array[i].getID() << setw(19) << array[i].getName() << array[i].getWage() << endl;
 			}
 
-			cout << "It took: " << timeSecond << " second to complete." << endl;
+			cout << "It took: " << timeSecond << " seconds to complete." << endl;
 			cout << "It took: " << timeMinute << " minutes to complete." << endl;
 		}
 	}
@@ -112,8 +148,8 @@ void Reader::bubbleSort()
 
 	chrono::high_resolution_clock::time_point end = chrono::high_resolution_clock::now();
 	chrono::duration<double, milli> time = end - start;
-	timeSecond = time.count() / 1000;
-	timeMinute = time.count() / 1000 / 60;
+	timeSecond = (time.count() / 1000);
+	timeMinute = (time.count() / 1000) / 60;
 }
 void Reader::insertionSort()
 {

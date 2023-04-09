@@ -2,7 +2,7 @@
 
 Person::Person()
 {
-	name = "";
+	name = " ";
 	wage = 0;
 	ID = 0;
 	deptID = 0;
