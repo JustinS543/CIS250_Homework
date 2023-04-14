@@ -128,6 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CIS250_Homework04_JustinSchley.cpp" />
+    <ClCompile Include="Driver.cpp" />
     <ClCompile Include="Person.cpp" />
     <ClCompile Include="Reader.cpp" />
   </ItemGroup>
@@ -135,6 +136,7 @@
     <Text Include="CensusSmall.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Driver.h" />
     <ClInclude Include="Person.h" />
     <ClInclude Include="Reader.h" />
   </ItemGroup>

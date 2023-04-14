@@ -7,15 +7,16 @@
 
 #include <iostream>
 #include <string>
-#include "Reader.h"
+#include "Driver.h"
 
 using namespace std;
 
 int main()
 {
     int size = 577; //This allows one value to change the length of the list
-    Reader r; //Assignment of the reader
-    r.writeArray(size); //Writes the array from the list
-    r.display(); //Displays the list forward & backward
+    Driver drive; //initialize Driver object
+    drive.setSize(size); //sets the size in drive for creating the array
+    drive.writeArray(); //writes data from the file into an array stored in drive
+    drive.menu(); //display menu, calls sorts based on selection
 }
 

@@ -1,8 +1,11 @@
-﻿  Reader.cpp
-C:\Users\Justin\Documents\GitHub\CIS250_Homework\CIS250_Homework04_JustinSchley\CIS250_Homework04_JustinSchley\Reader.cpp(48,37): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Justin\Documents\GitHub\CIS250_Homework\CIS250_Homework04_JustinSchley\CIS250_Homework04_JustinSchley\Reader.cpp(57,37): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Justin\Documents\GitHub\CIS250_Homework\CIS250_Homework04_JustinSchley\CIS250_Homework04_JustinSchley\Reader.cpp(65,37): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Justin\Documents\GitHub\CIS250_Homework\CIS250_Homework04_JustinSchley\CIS250_Homework04_JustinSchley\Reader.cpp(73,37): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Justin\Documents\GitHub\CIS250_Homework\CIS250_Homework04_JustinSchley\CIS250_Homework04_JustinSchley\Reader.cpp(81,37): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Justin\Documents\GitHub\CIS250_Homework\CIS250_Homework04_JustinSchley\CIS250_Homework04_JustinSchley\Reader.cpp(40,6): warning C4101: 'nextPos': unreferenced local variable
+﻿  CIS250_Homework04_JustinSchley.cpp
+  Driver.cpp
+  Person.cpp
+  Reader.cpp
+C:\Users\Justin\Documents\GitHub\CIS250_Homework\CIS250_Homework04_JustinSchley\CIS250_Homework04_JustinSchley\Reader.cpp(28,37): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Justin\Documents\GitHub\CIS250_Homework\CIS250_Homework04_JustinSchley\CIS250_Homework04_JustinSchley\Reader.cpp(36,37): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Justin\Documents\GitHub\CIS250_Homework\CIS250_Homework04_JustinSchley\CIS250_Homework04_JustinSchley\Reader.cpp(44,37): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Justin\Documents\GitHub\CIS250_Homework\CIS250_Homework04_JustinSchley\CIS250_Homework04_JustinSchley\Reader.cpp(52,37): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Justin\Documents\GitHub\CIS250_Homework\CIS250_Homework04_JustinSchley\CIS250_Homework04_JustinSchley\Reader.cpp(60,37): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  Generating Code...
   CIS250_Homework04_JustinSchley.vcxproj -> C:\Users\Justin\Documents\GitHub\CIS250_Homework\CIS250_Homework04_JustinSchley\x64\Debug\CIS250_Homework04_JustinSchley.exe

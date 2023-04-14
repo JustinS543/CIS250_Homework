@@ -11,9 +11,9 @@ private:
 	int ID;
 	int deptID;
 public:
+	//Constructor/Overloaded Constructor
 	Person();
 	Person(string, double, int, int);
-	void setAll(string, double, int, int);
 	//Getters
 	string getName();
 	double getWage();

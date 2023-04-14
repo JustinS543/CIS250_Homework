@@ -8,12 +8,6 @@
 class Reader
 {
 private:
-	//Person array & size
-	Person* array;
-	int size;
-	//Chrono time storage
-	double timeSecond;
-	double timeMinute;
 	//Temporary storage for data from the file
 	string nameTemp;
 	string dumpTemp;
@@ -21,10 +15,9 @@ private:
 	int IDTemp;
 	int deptIDTemp;
 public:
+	//Constructor
 	Reader();
-	void writeArray(int);
-	void display();
-	void bubbleSort();
-	void insertionSort();
+	//Read file and write to array
+	Person* writeArray(int);
 };
 
